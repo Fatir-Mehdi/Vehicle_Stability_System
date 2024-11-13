@@ -24,8 +24,25 @@ A vehicle stability system, or Electronic Stability Control (ESC), is an automot
 7. **ASR Intervention**
    - Set one side of the road to wet, accelerate at 20%, 50%, and 100%, and observe ASR actions, including controlled braking and indicator lights.
 
+8. **ESP Self-Test**: Turn ignition off, then to start. Observe ESP and engine LEDs for self-test activation.
+
+9. **ESP Intervention**: Set road conditions to dry, drive at 50 km/h, then simulate oversteer/understeer with a 15° steering angle left and right. Record which wheels engage in controlled braking.
+
+10. **CAN Bus Measurement**: Connect to the steering angle sensor, set oscilloscope to 5 V/div (Channel A) and 2 V/div (Channel B) with a 100 μs/div time base, adjust trigger, and capture CAN bus signal.
+
+
+## Tools and Resources
+
+- **Lucas Nuelle Experimental Kit**: Used for hands-on experimentation with vehicle stability components, including ABS and ASR testing setups.
+
+- **MATLAB and Google Colab**: Utilized for data visualization and analysis, enabling a deeper understanding of speed sensor signals and ABS/ASR response under varying conditions.
+
+- **OBD-II Diagnostic Tools**: Employed for reading vehicle diagnostics and sensor data. These include:
+  - **OBD-II Scanner**: For accessing and interpreting fault codes related to ABS and stability control systems.
+  - **OBD-II Cables**: Used to connect the diagnostic scanner to the vehicle for real-time data capture.
 
 ## Description
+
 ## 1)
 The experimental board is shown below. In this measurement, we will determine the speed
 sensor's supply voltage.
@@ -150,3 +167,76 @@ and specify whether or not the ASR intervenes in each case.
 Accelerator pedal at 20%
 Accelerator pedal at 50%
 Accelerator pedal at 100%
+
+## 8)
+ESP self-test
+ESP performs a self-test when the vehicle is started.
+Experiment setup:
+Set the board as follows:
+1. Turn the ignition switch fully to the left (OFF).
+2. Now turn the ignition switch fully to the right to simulate starting of the vehicle.
+3. Observe the LED's for the ESP and engine.
+
+## 9)
+ESP intervention
+Experiment setup:
+Set the board as follows:
+1. Set both roadway conditions to dry.
+
+Set the speed to about 50 km/h. Then select whether the vehicle should oversteer or
+understeer, and change the steering angle as indicated below. In which situations do which
+wheels undergo controlled braking?
+Oversteer - steering
+angle of 15° to the left
+Oversteer - steering
+angle of 15° to the right
+Understeer - steering
+angle of 15° to the left
+Understeer - steering
+angle of 15° to the right
+
+## 10)
+CAN bus measurement
+We will now record the CAN bus signal from the steering angle sensor.
+Experiment setup:
+1. Connect the measuring leads as shown below.
+![image](https://github.com/user-attachments/assets/8db680b5-77d8-4692-9742-e68d98c7ab4e)
+Open the Oscilloscope from the menu
+Instruments/Measuring Devices.
+Select the following settings:
+Channel A: 5 V / div; DC; Y-POS: -
+Channel B: 2 V / div; DC; Y-POS: -
+Time: 100 μs / div
+Mode: X/T
+2. Move the trigger upward by one and a half divisions.
+
+## Results
+
+1. **Speed Sensor Supply Voltage**: Measured accurate voltage supply to speed sensor, ensuring functionality.
+2. **Speed Sensor Signal**: Successfully visualized speed signals at various speeds, confirming sensor responsiveness.
+3. **ABS on Dry Surface**: Observed ABS activation at different braking intensities, with controlled braking in dry conditions.
+4. **ABS on Wet Surface**: Noted ABS intervention and stability differences under wet-road braking.
+5. **Speed Signal During ABS**: Monitored speed signal during full braking, observing expected deceleration patterns.
+6. **ABS Fault Diagnosis**: Detected ABS malfunction via fault codes, identifying wheel speed sensor issues.
+7. **ASR Intervention**: Recorded ASR activity under different acceleration levels on wet surfaces, with controlled braking observed.
+8. **ESP Self-Test**: Observed ESP self-check on ignition, confirming activation as designed.
+9. **ESP Intervention**: Verified ESP-controlled braking under simulated oversteer/understeer scenarios.
+10. **CAN Bus Measurement**: Captured CAN bus signal from steering sensor, validating correct signal transmission.
+
+## Skills Acquired
+
+- **Diagnostic and Measurement Techniques**: Gained proficiency in using diagnostic tools (oscilloscope, voltmeter) for accurate voltage and signal measurements.
+- **Sensor Data Analysis**: Developed skills in analyzing data from speed and steering angle sensors.
+- **Vehicle Stability System Testing**: Practiced configuring and testing ABS, ASR, and ESP systems under various road and driving conditions.
+- **CAN Bus Signal Analysis**: Learned to record and interpret CAN bus signals, essential for understanding in-vehicle communication networks.
+- **Practical Problem-Solving**: Enhanced ability to troubleshoot system faults, identify issues, and understand real-world vehicle dynamics.
+
+## Importance of the Project
+
+This project underscores the critical role of Electronic Stability Control (ESC) and related systems (ABS, ASR, ESP) in enhancing vehicle safety and control. By simulating real-world conditions and faults, the project provides valuable insight into how these systems prevent skidding, maintain stability, and assist drivers in emergencies. The hands-on experience with diagnostics and stability control systems equips students with practical knowledge applicable to automotive safety, diagnostics, and repair, preparing them for real-world applications in the automotive industry.
+
+## Conclusion
+
+The practicals confirmed the effectiveness of the vehicle stability systems (ABS, ASR, ESP) under various conditions, highlighting their crucial role in safety. Accurate diagnostics and measurements demonstrated the systems’ responsiveness to different road conditions, braking intensities, and steering inputs, providing insight into their operational reliability and performance.
+
+
