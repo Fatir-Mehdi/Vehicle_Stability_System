@@ -1,6 +1,30 @@
 # Vehicle_Stability_System
 A vehicle stability system, or Electronic Stability Control (ESC), is an automotive safety feature that improves handling by monitoring wheel speed, steering, and acceleration. If it detects potential skidding, the system adjusts braking and engine power to help the driver maintain control, reducing the risk of accidents.
 
+## Methodology
+
+1. **Speed Sensor Voltage Measurement**
+   - Turn the ignition on and use a voltmeter set to 10 V (DC) to measure and record the speed sensor's supply voltage.
+
+2. **Speed Signal Visualization**
+   - Increase speed to 10, 20, and 40 km/h. Use an oscilloscope with specific settings to display the sensor signal.
+
+3. **ABS on Dry Surfaces**
+   - Drive at 50 km/h on a dry surface and apply the brakes at 20%, 70%, and 100% pedal pressure. Record ABS activation on each wheel.
+
+4. **ABS on Wet Surfaces**
+   - Accelerate to 50 km/h with one side of the road set to wet. Apply brakes at different intensities, recording ABS activation on specific wheels.
+
+5. **Speed Signals During ABS Braking**
+   - At 99 km/h on dry roads, apply full braking. Capture the speed signal with an oscilloscope to observe ABS response around 50 km/h.
+
+6. **ABS Fault Diagnosis**
+   - Use a diagnostic tool to check fault codes and verify wheel speed sensor output with an oscilloscope to diagnose ABS malfunctions.
+
+7. **ASR Intervention**
+   - Set one side of the road to wet, accelerate at 20%, 50%, and 100%, and observe ASR actions, including controlled braking and indicator lights.
+
+
 ## Description
 ## 1)
 The experimental board is shown below. In this measurement, we will determine the speed
