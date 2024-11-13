@@ -6,4 +6,5 @@ Experiment setup
 The experimental board is shown below. In this measurement, we will determine the speed
 sensor's supply voltage.
 
-![Alt text]("C:\Users\asus\Desktop\GitHub\Screenshot 2024-11-13 141811.png")
+![Screenshot 2024-11-13 141811](https://github.com/user-attachments/assets/b300bf2d-9db8-4c73-b89e-5e3534a3173f)
+
