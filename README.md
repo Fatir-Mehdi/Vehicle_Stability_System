@@ -101,12 +101,28 @@ Workshop order: ABS | A customer has complained that the ABS indicator lamp in t
 ![image](https://github.com/user-attachments/assets/e43062b1-3231-469a-8c27-6216c9dd3a4d)
 
 The diagnosis of the ABS malfunction was carried out through a combination of fault code reading and physical measurements. Here's a breakdown of the steps:
-## 1. Fault Code Reading:
+1. Fault Code Reading:
 The technician used a diagnostic tool to read the fault memory of the vehicle's electronic control unit (ECU).
 The fault code indicated a potential issue with the wheel speed sensor.
-## 2. Physical Measurements:
+2. Physical Measurements:
 The technician likely used an oscilloscope to analyze the electrical signals from the wheel speed sensor.
 This would involve checking the sensor's output voltage, signal frequency, and waveform shape.
 By comparing the measured values to the expected values, the technician could determine if the sensor was functioning correctly.
 
+## 7)
+ASR intervention
+We will now learn about the action of ASR under various driving circumstances and road conditions.
+Experiment setup:
+Set the board as described next
+1. Set the right-hand roadway condition to wet.
 
+Set the accelerator pedal to 100%. What do you observe on the board?
+The front right wheel undergoes controlled braking.
+The ASR control lamp shines while the ASR is active.
+The motor for building up brake pressure operates.
+
+Brake the vehicle again, then operate the accelerator pedal once more as indicated below
+and specify whether or not the ASR intervenes in each case.
+Accelerator pedal at 20%
+Accelerator pedal at 50%
+Accelerator pedal at 100%
