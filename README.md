@@ -233,7 +233,7 @@ Mode: X/T
 
 ## Importance of the Project
 
-This project underscores the critical role of Electronic Stability Control (ESC) and related systems (ABS, ASR, ESP) in enhancing vehicle safety and control. By simulating real-world conditions and faults, the project provides valuable insight into how these systems prevent skidding, maintain stability, and assist drivers in emergencies. The hands-on experience with diagnostics and stability control systems equips students with practical knowledge applicable to automotive safety, diagnostics, and repair, preparing them for real-world applications in the automotive industry.
+This project underscores the critical role of Electronic Stability Control (ESC) and related systems (ABS, ASR, ESP) in enhancing vehicle safety and control. By simulating real-world conditions and faults, the project provides valuable insight into how these systems prevent skidding, maintain stability, and assist drivers in emergencies. The hands-on experience with diagnostics and stability control systems equips us with practical knowledge applicable to automotive safety, diagnostics, and repair, preparing us for real-world applications in the automotive industry.
 
 ## Conclusion
 
